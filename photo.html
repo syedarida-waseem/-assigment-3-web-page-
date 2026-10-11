@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photography | VESTIGE</title>
+</head>
+
+<style>*{
+    margin: 0;
+padding: 0;box-sizing: border-box;}
+    
+.ancient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;background-color: #F3EBDD;
+}
+
+.ancient-text h1 {
+    font-size: 40px; color: #29251F;
+    margin-bottom: 20px;
+}
+
+.ancient-text p {
+    font-size: 17px;
+    line-height: 1.8;background-color: #E8D8BD;
+    color: #4B4033;
+    padding: 25px;
+    border-left: 4px solid #A66A42;
+    
+}
+
+.ancient-image img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .ancient {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .ancient-text h1 {
+        font-size: 32px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        height: 550px;
+        margin-top: 0;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ancient {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .ancient {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 23px;
+    }
+
+    .ancient-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 12px;
+    }
+
+    .ancient-image img {
+        height: 280px;
+        border-radius: 8px;
+    }
+}
+
+</style>
+<body>
+    
+<section class="ancient">
+    <div class="ancient-text">
+        <h1> CAPTURING MOMENTS IN HISTORY </h1>
+
+        <p>
+            Photography is one of the most valuable ways of documenting and preserving human history. A photograph captures a particular moment in time, allowing future generations to observe people, places, events, and traditions that might otherwise be forgotten. Before photography was invented in the nineteenth century, artists relied mainly on paintings, drawings, and written descriptions to record the world around them. The development of photography introduced a new way to preserve reality through images. Early photographs required long exposure times and specialized equipment, but technological advancements gradually made photography more accessible and practical. Historical photographs provide important evidence of significant events, including wars, political movements, scientific discoveries, architectural developments, and changes in everyday life. They also reveal how clothing, transportation, buildings, and social customs have evolved over time. Portraits of historical figures help us connect with individuals who influenced society, while photographs of ancient monuments and archaeological discoveries allow researchers to study places across different periods. Photography has also played an essential role in journalism, helping people understand events happening around the world. Today, museums, libraries, and archives preserve millions of historical photographs, using digital technology to protect them from damage and make them accessible to a wider audience. By exploring these visual records, we gain a deeper understanding of our past and recognize the importance of preserving memories for future generations. Every historical photograph tells a story, connecting the present with moments that shaped our world.
+
+
+
+
+    </div>
+
+    <div class="ancient-image">
+        <img src="  https://media.istockphoto.com/id/2043190693/photo/enjoying-a-sunny-day.jpg?s=612x612&w=0&k=20&c=ZZOH1ll7ax2hpFZMl3TCwsV-l1VD4msdf8StuuOqgfg= " alt="Ancient Civilization">
+    </div>
+</section>
+</body>
+</html>

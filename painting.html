@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>painting |VESTIGE</title>
+</head>
+<style>
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.ancient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;background-color: #F3EBDD;
+    gap: 40px;
+    padding: 60px;
+}
+
+.ancient-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;color: #29251F;
+}
+
+.ancient-text p {
+    font-size: 17px; background-color: #E8D8BD;
+    color: #4B4033;
+    padding: 25px;
+    border-left: 4px solid #A66A42;
+    line-height: 1.8;
+    line-height: 1.8;
+}
+
+.ancient-image img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .ancient {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .ancient-text h1 {
+        font-size: 32px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        height: 550px;
+        margin-top: 0;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ancient {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .ancient {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 23px;
+    }
+
+    .ancient-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 12px;
+    }
+
+    .ancient-image img {
+        height: 280px;
+        border-radius: 8px;
+    }
+}
+
+</style>
+<body>
+    
+
+
+<section class="ancient">
+    <div class="ancient-text">
+        <h1> THE ART OF PAINTING </h1>
+
+        <p>
+            Painting is one of the oldest and most expressive forms of art, allowing people to communicate their thoughts, emotions, beliefs, and experiences through colors, shapes, and images. Throughout history, paintings have played an important role in documenting human life and preserving the cultural heritage of different civilizations. Early humans created paintings on cave walls using natural pigments made from minerals, plants, and other materials. Over time, painting developed into a sophisticated art form, with artists experimenting with different techniques, surfaces, and styles. Ancient Egyptian paintings often depicted religious ceremonies, gods, pharaohs, and everyday activities, while Greek and Roman artists created decorative paintings and detailed murals. During the Renaissance, painting reached new heights as artists explored perspective, proportion, light, and shadow to create more realistic images. Famous artists such as Leonardo da Vinci, Michelangelo, and Vincent van Gogh made remarkable contributions to the history of art through their unique styles and creative ideas. Paintings have also served as historical records, illustrating important events, royal portraits, landscapes, and traditional customs. Different painting styles, including realism, impressionism, abstract art, and surrealism, demonstrate how artistic expression has changed across generations. Today, paintings are preserved in museums, galleries, and private collections around the world. By studying these artworks, we can learn about the societies that produced them and appreciate the imagination, skill, and creativity of the artists. Every painting tells a story, making it a valuable window into human history and culture.
+
+
+
+        </p>
+    </div>
+
+    <div class="ancient-image">
+        <img src="  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRHw0pGJwdSaH7WJM-EI-B_5Go6k6gCrEXPUgNhzxAPw&s" alt="Ancient Civilization">
+    </div>
+</section>
+
+</body>
+</html>

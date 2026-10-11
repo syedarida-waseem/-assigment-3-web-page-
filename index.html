@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESTIGE-Digital Museum</title>
+    <style>
+
+
+
+
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{width:100%; height: 65px; background:#3A2F27;}
+        .logo{
+            font-family: Geo*rgia, 'Times New Roman', Times, serif;
+        font-weight: 500px;font-size: 40px;color:#B88A44;display:inline-block;padding:5px 5px;
+    letter-spacing: 2px;
+        }
+        .links{
+            display:inline-block; text-decoration: none; ;justify-content: space-between; padding: 15px 101px;
+            margin-left: 25px;
+    }
+        .links a {justify-content: space-between; text-decoration: none; padding: 0 25px; font-size: 17px;
+        text-align: center; color:#E7DCC8; font-family: Arial, Helvetica, sans-serif;}
+        .links a:hover{  color:#A47B45 ;}
+        .button{border-radius: 8px; padding: 4px 4px; background-color:#A47B45 ;color:#F3EBDD ; margin-left: 150px;}
+        .button:hover{color:#302820 ;background-color: #D8C6A5 ;}
+        
+        .section{padding: 39px 9%;}
+        .home{display: flex;align-items: center;min-height: 600px;justify-content:left;
+            background:url(https://blog.tcea.org/wp-content/uploads/2021/05/pexels-andrea-albanese-397431-scaled.jpg);background-position: center;background-size: cover;}
+        .home .content{max-width: 800px;}
+            .content h3{font-size: 40px;justify-content:left;margin-left: 10px;color: #29251F;}
+            .content h4{font-size: 16px;margin-left: 10px;color:#29251F ;}
+        .bTN{border-radius: 10px;margin-top: 4px; padding: 5px 4px; background-color:#A47B45 ;color:#F3EBDD ; margin-left: 25px;}
+        .bTN:hover{color:#302820 ;background-color: #D8C6A5 ;}
+       
+        
+    
+.collection {
+
+    background-color:#F1E8DC;
+    padding: 80px 8%;
+}
+
+.collection-heading {
+    text-align: center;
+    margin-bottom: 15px;
+    color :#2C2520;
+}
+
+.collection-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.collection-heading p {
+    color: #6F5A47;
+    font-size: 20px;
+}
+
+.museum-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 220px);
+    gap: 25px;margin-top: 5px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: #40352C;
+    border: 1px solid #A67C52;
+    transition: 0.4s ease;border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #F1E8DC;
+    background: linear-gradient(
+        to bottom,
+        rgba(25, 20, 16, 0.85),
+        transparent
+    );
+}
+
+.text h3 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 9px;font-size: 15px;
+}
+
+.text p {
+    font-size: 13px;
+    line-height: 1;
+}
+
+.card:hover {
+    border-color: #D0A875;
+    box-shadow: 0 10px 25px rgba(44, 37, 32, 0.3);
+}
+
+.card:hover img {
+    transform: scale(1.06);
+}
+
+
+
+.ancient {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.art {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.manuscripts {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.coins {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.sculpture {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.paintings {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+
+.spotlight-box{
+    background-color:#E8E8E6 ;
+}
+
+
+.spotlight{
+background-color:#E8E8E6  ;
+    padding: 40px 8% 70px;
+
+}
+.spot-img{
+
+width: 100%;
+    margin-bottom: 29px;
+}
+
+ .spot-img img{width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 3px;
+}
+.spot-label{    
+      max-width: 900px;
+    margin: auto;
+}
+.spot-label h4 {
+    color:#A66A42;left:1.5 ;
+}
+
+.spot-label  h2 {
+
+color:#29251F;line-height:1.5 ;
+
+}
+.spot-label p{  
+ font-size: 17px;
+    line-height: 1.8;background-color: #E8D8BD;
+    color: #4B4033;
+    padding: 19px;
+    border-left: 4px solid #A66A42;
+    
+
+}
+.spot-btn{border-radius: 8px; padding: 4px 4px; background-color:#A47B45  ; 
+      max-width: 900px;
+margin-top: 6px;border-radius:6px;margin-left: 180px;margin-bottom: 6px;
+} 
+
+.spot-btn:hover{background-color: #D8C6A5 ; color: #292724;}
+
+.spot-btn a{text-decoration: none;color:#F1E8DC;}
+.photography {
+    grid-column: 4/5;
+    grid-row: 3 / 4;
+}
+
+
+
+
+
+.did-you-know {
+    background-color: #E6E0D6;
+
+    color: #F3EBDD;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.facts-label {
+    color: #C3A474;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.did-you-know h2 {
+    font-size: 36px;
+    letter-spacing: 4px;color: #80694E;
+    margin: 15px 0;
+}
+
+.facts-intro {
+    color:  #80694E;
+    margin-bottom: 45px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+.fact-card a{text-decoration: none;}
+.fact-card {
+    background-color: #D5D4D0 ;
+    padding: 30px;text-decoration: none;
+    border: 1px solid #625441;
+    transition: 0.3s;
+}
+
+.fact-card:hover {
+    background-color:#80694E;
+    transform: translateY(-6px);
+}
+
+.fact-card span {
+    color: #80694E;
+    font-size: 14px;
+}
+
+.fact-card h3 {
+    color: #292724  ;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+.fact-card p {
+    color: #292724;
+    line-height: 1.8;
+    font-size: 14px;
+}
+.footer{ padding: 55px 8% 25px;background-color:#3A2F27;
+ color:#302820;}
+          .footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+       .footer-column a {
+    display: block;
+    color: #B9AA99;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;}
+    .footer-brand h2 { font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 500;
+color: #B88A44;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin: 0 0 12px;}
+.footer-column a:hover {
+    color: #F1E8DC;}
+    
+    
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1024px) {
+
+    .navbar {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .links a {
+        padding: 8px;
+    }
+
+    .button {
+        margin: 10px;
+    }
+
+    .museum-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+    }
+
+    .ancient,
+    .art,
+    .manuscripts,
+    .coins,
+    .sculpture,
+    .paintings,
+    .photography {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .card {
+        height: 220px;
+    }
+
+    .spot-btn {
+        margin-left: 0;
+    }
+
+    .facts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* MOBILE SCREEN */
+
+@media screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 5px;
+    }
+
+    .logo {
+        display: block;
+        font-size: 30px;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .links a {
+        display: inline-block;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .button {
+        margin: 5px;
+    }
+
+    /* HOME */
+
+    .home {
+        width: 100%;
+        min-height: 450px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 35px 6%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .home .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home .content h3 {
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.3;
+        margin: 0 0 12px;
+        overflow-wrap: break-word;
+    }
+
+    .home .content h4 {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 0 15px;
+    }
+
+    .home .bTN {
+        margin: 0;
+        padding: 9px 12px;
+    }
+
+    /* COLLECTION */
+
+    .collection {
+        padding: 45px 5%;
+    }
+
+    .collection-heading h2 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .collection-heading p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .museum-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .ancient,
+    .art,
+    .manuscripts,
+    .coins,
+    .sculpture,
+    .paintings,
+    .photography {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .card {
+        width: 100%;
+        height: 230px;
+    }
+
+    /* SPOTLIGHT */
+
+    .spotlight-box {
+        width: 100%;
+        padding: 25px 5%;
+    }
+
+    .spot-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .spot-img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .spot-label {
+        width: 100%;
+    }
+
+    .spot-label h2 {
+        font-size: 24px;
+    }
+
+    .spot-label p {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 14px;
+    }
+
+    .spot-btn {
+        margin: 15px 0;
+    }
+
+    /* DID YOU KNOW */
+
+    .did-you-know {
+        padding: 40px 5%;
+    }
+
+    .did-you-know h2 {
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+
+    .facts-intro {
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .facts-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .fact-card {
+        padding: 22px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 40px 7% 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .footer-brand h2 {
+        font-size: 32px;
+    }
+}
+
+/* TABLET RESPONSIVE DESIGN */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* NAVBAR */
+    .navbar {
+        height: auto;
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 12px 20px;
+    }
+
+    .links {
+        padding: 12px 15px;
+        margin-left: 0;
+    }
+
+    .button {
+        margin-left: auto;
+    }
+
+    /* HOME SECTION */
+    .home {
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        padding: 40px 5%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .home .content {
+        width: 70%;
+        max-width: 650px;
+    }
+
+    .content h3 {
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.3;
+        margin: 0 0 12px;
+    }
+
+    .content h4 {
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0 0 15px;
+    }
+
+    .bTN {
+        margin-left: 0;
+        padding: 9px 14px;
+    }
+
+    /* COLLECTION GRID */
+    .museum-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 220px;
+        gap: 15px;
+    }
+
+    .ancient,
+    .art,
+    .manuscripts,
+    .coins,
+    .sculpture,
+    .paintings,
+    .photography {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* MUSEUM SPOTLIGHT */
+    .spotlight-box {
+        padding: 25px;
+    }
+
+    .spot-img img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    /* DID YOU KNOW */
+    .facts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="navbar">
+        <div class="logo">VERSTIGE</div>
+        <ul class="links">
+            <il><a href="#">Home</a></il>
+            <il><a href="collection.html"> Collection</a></il>
+            <il><a href="#">Spotlight</a></il>
+            <il><a href="#">About us</a></il>
+          </ul>
+          <button class="button">explore more</button>
+          </section>
+          
+
+<section class="home">
+    <div class="content">
+        <h3>TRACES OF WHAT REMAINS</h3>
+        <h4>Discover objects, stories and forgotten moments preserved through time</h4>
+        <button class="bTN">EXPLORE ARCHIVE</button>
+    </div>
+</section>
+
+
+<section class="collection" id="collection">
+
+    <div class="collection-heading">
+        <h2>EXPLORE THE COLLECTIONS</h2>
+        <p>Discover the fragments of history that shaped our world.</p>
+    </div>
+
+    <div class="museum-grid">
+
+        <div class="card ancient"> <a href="accient.html" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ysrgAc1Q1oSsyybSY9OIZplwn96InaJo9U0ekAlSNb4pwK8UwsEBDik&s=10" alt="Ancient Civilization">
+            <div class="text">
+                <h3>ANCIENT</h3>
+                <p>Echoes of lost civilizations.</p>
+            </div>
+        </div>
+    </a>
+        <div class="card art"><a href="art.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgqFXEAsRpm1fIG2-Y_dgAUvfj78g2jJ2RgAZQxe3bhNF0jQEqqZursWA&s=10" alt="Historical Art">
+            <div class="text">
+                <h3>ART</h3>
+                <p>Creativity beyond time.</p>
+            </div>
+        </div>
+    </a>
+
+        <div class="card manuscripts"><a href="manuscript.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAApLT5i0pYnvPSdMpX_P56Iy8bRS9C5s26Z8jyd6jm9cPdp--vrnnrSy&s=10" alt="Ancient Manuscripts">
+            <div class="text">
+                <h3>MANUSCRIPTS</h3>
+                <p>Words preserved through centuries.</p>
+            </div>
+        </div>
+    </a>
+        <div class="card coins"><a href="coins.html">
+            <img src="https://sandiegocoin.com/wp-content/uploads/2024/02/ancient-World-Coins.jpg" alt="Historical Coins">
+            <div class="text">
+                <h3>COINS</h3>
+                <p>Stories engraved in metal.</p>
+            </div>
+        </div>
+    </a>
+        <div class="card sculpture"><a href="sculpture.html">
+            <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/247173/539614/main-image" alt="Historical Sculpture">
+            <div class="text">
+                <h3>SCULPTURE</h3>
+                <p>History shaped by human hands.</p>
+            </div>
+        </div>
+    </a>
+
+        <div class="card paintings"><a href="painting.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3WUyrP_SJkCRqhab4ooODuSDdMcw1bRHGMqZRD2O5rTG4mETjqRdtNA&s=10" alt="Historical Paintings">
+            <div class="text">
+                <h3>PAINTINGS</h3>
+                <p>Visions captured across generations.</p>
+            </div>
+        </div>
+    </a>
+        <div class="card photography"><a href="photo.html">
+            <img src="https://thumbs.dreamstime.com/b/vintage-black-white-photo-group-young-people-s-european-vintage-black-white-photo-group-young-people-138566980.jpg" alt="Historical Photography">
+            <div class="text">
+                <h3>PHOTOGRAPHY</h3>
+                <p>Moments that time cannot erase.</p>
+            </div>
+        </div>
+    </a>
+    </div>
+</section>
+<hr>
+   </section>
+   <section class="spotlight-box">
+    <div class="spot-img">
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeBN2f7nSqaqxWovgTaHdjYyn1-ycxLaI1auGWmQy7HLGm5cPbWXQZjLc&s=10   ">
+
+    </div>
+    <div class="spot-label"><h4> FEATURED ARTIFACT </h4>
+    <h2> THE LEGACY OF LAHORE </h2>
+<p>  Lahore is one of Pakistan’s most historic cities, known for its magnificent architecture, rich cultural heritage, and remarkable landmarks. From the grand Lahore Fort and the beautiful Badshahi Mosque to the historic Wazir Khan Mosque and Shalimar Gardens, the city reflects centuries of Mughal and traditional influence. Its ancient streets, detailed artwork, and impressive monuments tell stories of powerful rulers, artistic achievements, and cultural traditions. Today, these historical places continue to attract visitors and preserve Lahore’s identity as a city where history and beauty exist together.
+
+</p></div><button class="spot-btn"><a href="discover.html">
+    Discover more
+</button></a>
+
+
+
+<section class="did-you-know" id="facts">
+
+    <p class="facts-label">DISCOVER SOMETHING NEW</p>
+
+    <h2>DID YOU KNOW?</h2>
+
+    <p class="facts-intro">
+        Small facts, fascinating stories, timeless history.
+    </p>
+
+    <div class="facts-grid">
+
+        <div class="fact-card"><a href="lahore.html">
+            <span>01</span>
+            <h3>The Lahore Fort</h3>
+            <p>
+                Lahore Fort is a UNESCO World Heritage Site
+                and reflects centuries of history and
+                Mughal architecture.
+            </p></a>
+        </div>
+    
+        <div class="fact-card"><a href="badshahi.html">
+            <span>02</span>
+            <h3>Badshahi Mosque</h3>
+            <p>
+                Badshahi Mosque was commissioned by Mughal
+                Emperor Aurangzeb and completed in 1673.
+            </p></a>
+        </div>
+
+        <div class="fact-card"><a href="shalimar.html">
+            <span>03</span>
+            <h3>Shalimar Gardens</h3>
+            <p>
+                The Shalimar Gardens are famous for their
+                Mughal design, terraces, fountains and
+                beautiful landscape.
+            </p>
+        </div></a>
+        </div>
+       </section>
+
+          <section class="footer">
+            <div class="footer-container">
+            <div class ="footer-brand"><h2>VERSTIGE</h2>
+            </div>
+            <div class="ex">
+                <h4>Explore</h4>
+                <ul class="footer-column">
+                    <il><a href="#">Home</a></il>
+                    <il><a href="#">about us</a></il>
+                    <il><a href="#">museum</a></il>
+                </ul>
+            </div>
+            <div class="Col">
+                <h4>Collection</h4>
+                <ul class="footer-column">
+                <il><a href="#">Ancient</a></il>
+                <il><a href="#">Art</a></il>
+                <il><a href="#">History</a></il>
+                </ul>
+            </div>
+            <div class="con">
+                <h4> Content</h4>
+                <ul class="footer-column">
+                    <il><a href="#">facebook</a></il>
+                    <il><a href="#">Instagram</a></il>
+                    <il><a href="#">Email</a></il>
+                </ul>
+            </div>
+            </div>
+          </section>
+</body>
+</html><style>

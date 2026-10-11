@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accient | VESTIGE</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    
+
+
+.ancient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+   background-color:#F3EBDD ;
+    padding: 60px;
+}
+
+.ancient-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;color:#29251F ;
+}
+
+.ancient-text p {
+    font-size: 17px;
+    line-height: 1.8;background-color:#E8D8BD ;
+border-left: 4px solid #A66A42;;padding-left: 20px;
+
+}
+
+.ancient-image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 12px;margin-top: 11%;
+}
+
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .ancient {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .ancient-text h1 {
+        font-size: 32px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        height: 550px;
+        margin-top: 0;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ancient {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .ancient {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 23px;
+    }
+
+    .ancient-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 12px;
+    }
+
+    .ancient-image img {
+        height: 280px;
+        border-radius: 8px;
+    }
+}
+
+</style>
+<body>
+   
+<section class="ancient">
+    <div class="ancient-text">
+        <h1>ANCIENT CIVILIZATIONS</h1>
+
+        <p>
+             
+Ancient civilizations played an important role in shaping the history of humanity. Thousands of years ago, people established remarkable societies that developed their own languages, traditions, religions, systems of government, and ways of life. Some of the most famous ancient civilizations include Ancient Egypt, Mesopotamia, the Indus Valley, Ancient Greece, and Ancient Rome. These societies made significant contributions to architecture, mathematics, science, medicine, art, and literature. The Egyptians constructed magnificent pyramids and temples, while the people of Mesopotamia developed early writing systems and organized cities. The Indus Valley Civilization was known for its well-planned streets, advanced drainage systems, and impressive urban design. Ancient Greeks contributed to philosophy, democracy, and scientific thinking, while the Romans built roads, bridges, and architectural structures that influenced later generations. Archaeological discoveries, including pottery, coins, sculptures, manuscripts, monuments, and ancient buildings, provide valuable information about the daily lives and beliefs of these people. Historians and archaeologists carefully study these artifacts to uncover stories that have remained hidden for centuries. Although many of these civilizations disappeared or changed over time, their achievements continue to influence modern society. Studying ancient civilizations helps us understand our origins, appreciate the creativity of early humans, and recognize how knowledge and culture have developed throughout history. Every ancient artifact represents a connection to the past and reminds us that the foundations of our modern world were built through the ideas, discoveries, and experiences of earlier generations.
+
+
+
+        </p>
+    </div>
+
+    <div class="ancient-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAth1ubRx8CEId1PtYGww34XJ8V7ldBlJTfcDJ0apho8BqMw62TJG2O1hR&s=10" alt="Ancient Civilization">
+    </div>
+</section>
+        
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sculpture | VESTIGE</title>
+</head>  
+
+<style>
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.ancient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;background-color: #F3EBDD;
+    padding: 60px;
+}
+
+.ancient-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px; color: #29251F;
+}
+
+.ancient-text p {
+    font-size: 17px;
+    line-height: 1.8;background-color: #E8D8BD;
+    color: #4B4033;
+    padding: 25px;
+    border-left: 4px solid #A66A42;
+    
+}
+
+.ancient-image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 12px;margin-top: 17%;
+}
+
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .ancient {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .ancient-text h1 {
+        font-size: 32px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        height: 550px;
+        margin-top: 0;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ancient {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .ancient-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+
+    .ancient-image img {
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .ancient {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .ancient-text h1 {
+        font-size: 23px;
+    }
+
+    .ancient-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 12px;
+    }
+
+    .ancient-image img {
+        height: 280px;
+        border-radius: 8px;
+    }
+}
+</style>
+<body>
+    
+<section class="ancient">
+    <div class="ancient-text">
+        <h1> THE BEAUTIY OF THE SCULPTURE</h1>
+
+        <p>
+           
+            
+
+
+Sculpture is one of the oldest forms of artistic expression, through which people have transformed materials such as stone, wood, clay, bronze, and marble into meaningful works of art. Throughout history, sculptures have represented gods, rulers, warriors, animals, and ordinary people, reflecting the beliefs, traditions, and artistic skills of different civilizations. Ancient Egyptian sculptors created impressive statues of pharaohs and religious figures, often placing them in temples and tombs. Greek sculptors became famous for their detailed representations of the human body, focusing on balance, movement, and proportion. Roman artists developed realistic portraits and monuments that celebrated emperors, military victories, and important public figures. In South Asia, the Indus Valley Civilization produced small figurines and other objects that provide clues about ancient craftsmanship and daily life. Sculptures were not created only for decoration; many served religious, cultural, political, and memorial purposes. Artists used different techniques, including carving, modeling, casting, and assembling, to bring their ideas to life. Over the centuries, sculpture evolved through many artistic movements, introducing new materials, styles, and interpretations of the world. Today, historical sculptures are preserved in museums, archaeological sites, temples, and public spaces. They allow historians and visitors to explore the creativity, values, and achievements of past societies. Each sculpture carries a story within its form, offering a lasting connection to the people and civilizations that shaped human history.
+
+        </p>
+    </div>
+
+    <div class="ancient-image">
+        <img src="   https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6N0TIVT14vU4N5N8Ta77CWO1DDjZ7RV6UudykmHTIkeC97oaOuV8Bi0U&s=10  " alt="Ancient Civilization">
+    </div>
+</section>
+</body>
+</html>
